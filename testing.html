@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=c, initial-scale=1.0">
+    <title>Josh's page</title>
+<style>
+    body{font-family: 'Courier New',Arial, Helvetica, sans-serif;}
+    .header {
+        padding:80px;
+        text-align:center;
+        background:greenyellow;
+        color:black;
+    }
+    .header h1 {
+        font-size: 90px;
+    }
+    .navbar {
+        overflow:hidden;
+        background-color: black;
+    }
+    .navbar a {
+        float:right;
+        display:block;
+        color:antiquewhite;
+        text-align: center;
+        padding: 15px 25px;
+        text-decoration: none;
+    }
+    .navbar a:hover {
+        background-color: brown;
+        color:aliceblue;
+    }
+
+    .side {
+        flex: 30%;
+        background-color: beige;
+        padding: 30px;
+    }
+    .main {
+        flex:70%;
+        background-color: aquamarine;
+        padding:40px;
+    }
+</style>
+</head>
+<body>
+    <div class="header">
+    <h1> MY WEBSITE</h1>
+    <p>a simple layout for my checkpoint</p>
+    </div>
+    <div class="navbar"
+         <a  href="">Home</a>
+         <a  href="">About</a>
+        <a  href="./contact2.html">Contact</a>
+        <a  href="">Resume</a>
+        <a  href="">Work</a>
+    </div>
+    <div class= "row">
+     <div class= "side">
+        <h2>About Me</h2>
+        <h5>Pictures of my job</h5>
+        <div class="img" style="height:200px;"><img src="data:image/png;base64,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" alt="no image">
+            <p>being a student at gomycode brings me so much comfort</p>
+            <h3>More information about gomycode, you can visit the about page</h3>
+    </div>
+    <div class="main">
+        <h2>FIRST PARAGRAPH</h2>
+        <h5>Title description,July 3rd,2024</h5>
+        <div class="img"
+        style="height:200px">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkF5V0rRvm7wb2b325kA-MQ2sCpN8UV-M6Bg&s"
+    </div>
+        <p>my name is Joshua, for future purposes</p>
+        <p>some time ago, i developed passion in creating and enabling a web software. here i am at gomycode learning. can't wait....</p>
+        <br>
+        <h2>SECOND PARAGRAPH</h2>
+        <h5>Title description, july 3rd, 2024</h5>
+        <div class="img"
+        style="width:50px">
+        <img src="https://gomycode.com/ng/wp-content/uploads/sites/29/2023/03/Rectangle-2161-4.png"></div>
+        <p>oh well here comes the fun</p>
+        <p> it's a 6 month course and i am looking forward to each new day!</p>
+    </div>
+     </div>
+</body>
+</html>
